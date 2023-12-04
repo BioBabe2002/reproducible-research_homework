@@ -16,7 +16,9 @@ Random seeds are used to create variables that take on random values, in a way w
 
 C)Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked `reproducible-research_homework` repo.
 
-- Link can be accessed here: 
+- Link can be accessed here:
+  [
+](https://github.com/BioBabe2002/reproducible-research_homework/commit/1b97983eb706fc62156acfad5a2fa411ee5ab99f)
 
 D) Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the **README.md** of the fork).
 ![Image 04-12-2023 at 15 03](https://github.com/BioBabe2002/reproducible-research_homework/assets/150148922/c3c991fb-c371-4806-8a03-65d74283550c)
