@@ -8,6 +8,15 @@ Q4) Brownian motion is the random motion of particles suspended in a medium resu
 A) Execute the code to produce the paths of two random walks. What do you observe?
 ![Image 04-12-2023 at 10 19](https://github.com/BioBabe2002/reproducible-research_homework/assets/150148922/da7cae40-0d77-4257-af43-c46ae9056627)
 
+The two plots show the various paths of randomly generated walks through time. The colour key denotes that walks generated at earlier time points have a darker blue tracing while walks generated at a later time point have lighter blue tracing. Both paths show completely different paths despite having the same number of steps and starting at the same coordinates (0,0).The left hand plot shows the path to be more concentrated while the right hand follows a more "spread out" path across the grid space. This variation between the two plots highlights well the stochasticity and randomeness of each path. 
+
+B) Investigate the term random seeds. What is a random seed and how does it work?
+
+Random seeds are used to create variables that take on random values, in a way which ensures that the results are reproducible. Random seeds are important for reproducibility so that if anyone decideds to run your code they will be able to obtain identical random outputs. When setting a seed, the state of the random number generator is altered so that it will produce the same sequence of random numbers every time given the seed value remains the same.
+
+C)Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked `reproducible-research_homework` repo.
+
+
 
 ## Instructions
 
