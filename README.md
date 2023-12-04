@@ -3,6 +3,12 @@
 Link for Logistic growth document containing answers for questions 1,2,3:
 (https://github.com/BioBabe2002/logistic_growth)
 
+Q4) Brownian motion is the random motion of particles suspended in a medium resulting from their collision fast moving molecles or atoms in this medium. This motion is completely stochastic.
+
+A) Execute the code to produce the paths of two random walks. What do you observe?
+![Image 04-12-2023 at 10 19](https://github.com/BioBabe2002/reproducible-research_homework/assets/150148922/da7cae40-0d77-4257-af43-c46ae9056627)
+
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
