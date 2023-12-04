@@ -23,6 +23,22 @@ C)Edit the script to make a reproducible simulation of Brownian motion. Commit t
 D) Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the **README.md** of the fork).
 ![Image 04-12-2023 at 15 03](https://github.com/BioBabe2002/reproducible-research_homework/assets/150148922/c3c991fb-c371-4806-8a03-65d74283550c)
 
+Q5) In 2014, Cui, Schlub and Holmes published an article in the Journal of Virology (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form , where  is the virion volume in nm3 and  is the genome length in nucleotides.
+
+A) Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the question-5-data folder). How many rows and columns does the table have? (3 points) 
+
+- There are 33 rows and 13 columns.
+
+B) What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points)
+
+A log transformation is useful to fit the linear model to the data. I applied the log transformation to both the virion volume and genome length. 
+
+Cui_etal2014$log_virion_volume <- log(Cui_etal2014$`Virion.volume..nm.nm.nm.`)
+Cui_etal2014$log_genome_length <- log(Cui_etal2014$`Genome.length..kb.`)
+
+C) Find the exponent (alpha) and scaling factor (beta) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values? (10 points)
+
+D) Write the code to reproduce the figure shown below. (10 points)
 
 ## Instructions
 
