@@ -28,6 +28,8 @@ random_walk  <- function (n_steps) {
   
 }
 
+set.seed(18) #By setting this seed it allows the plot to regenerate in the same way so that it is reproducible.
+
 data1 <- random_walk(500)
 
 plot1 <- ggplot(aes(x = x, y = y), data = data1) +
@@ -39,6 +41,8 @@ plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   xlab("x-coordinate") +
   
   ylab("y-coordinate")
+
+set.seed(76) #This seed is also set for the same reasons of reproducibility. It is different from the last however to make sure the two plots are not identical!
 
 data2 <- random_walk(500)
 
