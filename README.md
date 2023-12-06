@@ -77,6 +77,7 @@ Questions 1, 2 and 3 should be answered in the **README.md** file of the `logist
    - What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points)
    - Find the exponent ($\alpha$) and scaling factor ($\beta$) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in **Table 2** of the paper, did you find the same values? (10 points)
    - Write the code to reproduce the figure shown below. (10 points)
+   - Can be found in repo under "Q5 Code to Produce Figure".
 
   <p align="center">
      <img src="https://github.com/josegabrielnb/reproducible-research_homework/blob/main/question-5-data/allometric_scaling.png" width="600" height="500">
