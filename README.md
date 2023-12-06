@@ -1,5 +1,6 @@
 # Reproducible research: version control and R
 
+Candidate number: 	1441304
 Link for Logistic growth document containing answers for questions 1,2,3:
 (https://github.com/BioBabe2002/logistic_growth)
 
