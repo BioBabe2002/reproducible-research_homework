@@ -37,19 +37,14 @@ Cui_etal2014$log_virion_volume <- log(Cui_etal2014$`Virion.volume..nm.nm.nm.`)
 Cui_etal2014$log_genome_length <- log(Cui_etal2014$`Genome.length..kb.`)
 
 C) Find the exponent (alpha) and scaling factor (beta) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values? (10 points)
-<img width="636" alt="Screenshot 2023-12-06 at 19 31 35" src="https://github.com/BioBabe2002/reproducible-research_homework/assets/150148922/63ac4747-f541-41c1-a641-610174832c99">
 
-Viral particle volume can be predicted by their genome length using the allometric equation V = βL^α. Therefore to find the values of alpha (representing the exponent) and beta (the scaling factor), it was first necessary to apply a linear regression to the two variables, virion volume in nm3 and genome length in nucleotides. This was done using the code below.
-
-linear_model <- lm(data = Cui_etal2014, log_virion_volume~log_genome_length)
+The exponent and scaling factor for dsDNA viruses are given in a summary of the linear model using this code:
 summary(linear_model)
-
-In this formula, log(V)=β+α*log(L). β is the intercept, and α is the value provided for log_genome_length. Therefore, the value of the exponent (α) is 1.5152, and that of the scaling factor (β) is 7.0748. These values are highly significant in explaining the relationship between virion volume (V) and genome length (L), denoted by a three star significance code.
-
-So, this linear model suggests a relationship between the log of virus length and the log of genome length: V = βL^α, where β ≈ 7.0748 and α ≈ 1.5152
-
-V ≈ 7.0748L^1.5152
-From table 2 in the paper, the value of the exponent for dsDNA was recorded as 1.52, which is the same value to 2 significant figures as the value I found. The scaling factor in the paper was given as 1,182 for dsDNA, which, if we logarithmically backtransform our value of 7.0748 (e^7.0748) to give 1181.8071, is very similar to.
+The exponent is 1.5152
+P value = 6.44e-10
+Scaling factor = 7.0748
+P value = 2.28e-10
+Both the exponent and scaling factor are statistically significant. The scaling factor is different to that seen in the paper but if we logarithmically backtransform -> e^7.0748 it gives 1181.8071 which is very close to 1182 given in the paper. We can assume the scaling factor value in the article had been rounded.
 
 D) Write the code to reproduce the figure shown below. (10 points)
 
